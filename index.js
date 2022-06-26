@@ -8,3 +8,4 @@ const { default: App } = require("./AppWithProviders");
 
 
 registerRootComponent(App);
+

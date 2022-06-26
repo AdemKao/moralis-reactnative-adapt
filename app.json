@@ -3,7 +3,7 @@
     "name": "adapt",
     "slug": "adapt",
     "version": "1.0.0",
-    "scheme": "myreactnativedapp",
+    "scheme": "exp.adapt",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -31,6 +31,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "config-plugin-react-native-intercom",
+        {
+          "iosApiKey": "111",
+          "androidApiKey": "111",
+          "appId": "111"
+        }
+      ]
+    ]
   }
 }

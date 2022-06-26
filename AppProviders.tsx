@@ -17,7 +17,7 @@ import { MoralisProvider } from "react-moralis"
 import Moralis from "moralis/react-native.js";
 Moralis.setAsyncStorage(AsyncStorage)
 //@ts-ignore
-Moralis.enable = enableViaWalletConnect;
+// Moralis.enable = enableViaWalletConnect;
 console.log(AsyncStorage.getAllKeys(), "KEYS");
 
 const walletConnectOptions: WalletConnectProviderProps = {
@@ -47,9 +47,9 @@ export const AppProviders = ({ children }: ProvidersProps) => {
             appId={process.env.REACT_APP_MORALIS_APPLICATION_ID!}
             serverUrl={process.env.REACT_APP_MORALIS_SERVER_URL!}
             environment="native">
-                <MoralisDappProvider>
+                {/* <MoralisDappProvider> */}
                     {children}
-                </MoralisDappProvider>
+                {/* </MoralisDappProvider> */}
             </MoralisProvider>
         </WalletConnectProvider>
     );

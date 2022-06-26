@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Main from "./screens/Main"
 import Second from './screens/Second';
-
+import { View,Text } from "react-native";
 
 const fetchFonts = () => {
   return Font.loadAsync({
