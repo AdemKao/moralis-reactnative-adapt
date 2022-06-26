@@ -3,6 +3,7 @@
     "name": "adapt",
     "slug": "adapt",
     "version": "1.0.0",
+    "scheme": "myreactnativedapp",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,13 +19,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "adapt"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.ademkao.adapt"
     },
     "web": {
       "favicon": "./assets/favicon.png"
